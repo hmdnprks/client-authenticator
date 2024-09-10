@@ -57,6 +57,7 @@ const QRScanner: React.FC = () => {
         onError={handleError}
         scanDelay={500}
       />}
+      {error && <p className="text-red-400">{error}</p>}
 
       {secret &&
         (
